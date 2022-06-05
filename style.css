@@ -1,0 +1,165 @@
+/* 
+-- Menu font-family: Lato, sans-serif;
+-- Menu font color: #151515
+-- Menu button background-color: #b6b6b6
+*/
+
+/* YOUR CODE HERE ir beje sėkmės*/
+body {
+    width: 80%;
+    /* background-color: rgb(234, 234, 234); */
+    margin: 40px auto;
+    font-family: Lato, sans-serif;
+    font-size: x-small;
+    color: #151515;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.navigation_container {
+    width: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation_container img {
+    display: none;
+}
+
+.links_container {
+    display: flex;
+    align-items: center;
+}
+
+.custom-select {
+    padding-right: 15px;
+}
+
+.custom-select select {
+    border: none;
+    background-color: white;
+    font-size: x-small;
+}
+
+.custom-select select:active {
+    color: rgb(186, 0, 0);
+}
+
+nav a {
+    font-family: Lato, sans-serif;
+    color: #151515;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+nav a:active {
+    color: rgb(186, 0, 0);
+}
+
+.social_container {
+    padding-right: 15px;
+}
+
+button {
+    background-color: #b6b6b6;
+    padding: 10px;
+    color: white;
+}
+
+button:hover {
+    background-color: black;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    justify-items: center;
+    gap: 40px;
+}
+
+.photo img {
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 230px 230px;
+        justify-items: center;
+        gap: 40px;
+    }
+
+    .photo img {
+        width: 200px;
+        max-width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 90%;
+        /* background-color: rgb(234, 234, 234); */
+        margin: 40px auto;
+        font-family: Lato, sans-serif;
+        font-size: x-small;
+        color: #151515;
+    }
+
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 260px 260px;
+        justify-items: center;
+        gap: 40px;
+    }
+
+    .photo img {
+        width: 200px;
+        max-width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .navigation_container img {
+        display: block;
+    }
+
+    .links_container {
+        display: none;
+    }
+
+}
+
+/* utils */
+.icon {
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+}
