@@ -38,13 +38,8 @@ nav {
     align-items: center;
 }
 
-.navigation_container img {
+span {
     display: none;
-}
-
-.links_container {
-    display: flex;
-    align-items: center;
 }
 
 .custom-select {
@@ -147,11 +142,11 @@ main {
         object-fit: cover;
     }
 
-    .navigation_container img {
+    span {
         display: block;
     }
 
-    .links_container {
+    .navigation_container {
         display: none;
     }
 
